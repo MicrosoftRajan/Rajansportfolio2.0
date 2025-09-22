@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import { cn } from '@/lib/utils'
+import { ActionSectionProvider } from '@/components/context/active-section-provider'
 import { fonts } from '@/lib/fonts'
 import { siteConfig } from '@/lib/site-config'
+import { cn } from '@/lib/utils'
+import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
-import { ActionSectionProvider } from '@/components/context/active-section-provider'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: siteConfig.title,

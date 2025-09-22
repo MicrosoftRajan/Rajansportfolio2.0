@@ -65,35 +65,38 @@ export default function Header() {
         {/* Tablet/Desktop Navbar */}
         <ThemeToggle className="bg-background/80 backdrop-blur-sm" />
       </div>
-      <nav className="bg-background/80 items-center gap-2 text-muted-foreground hidden text-sm sm:flex rounded-full border px-2 py-3 backdrop-blur-sm">
-        <ul className="flex gap-5">
-          {navLinks.map((data) => (
-            <li key={data.name}>
-              <Link
-                href={data.href}
-                className="hover:text-foreground relative px-4 py-2 transition-colors"
-                onClick={() => {
-                  setActiveSection(data.name)
-                  setTimeOfLastClick(Date.now())
-                }}
-              >
-                {data.name}
-                {data.name === activeSection && (
-                  <motion.span
-                    className="bg-muted absolute inset-0 -z-10 rounded-full"
-                    layoutId="activeSection"
-                    transition={{
-                      type: 'spring',
-                      stiffness: 380,
-                      damping: 30,
-                    }}
-                  ></motion.span>
-                )}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      {/* Desktop Navbar */}
+      <div className="hidden sm:block">
+        <nav className="bg-background/80 items-center gap-2 text-muted-foreground text-sm flex rounded-full border px-2 py-3 backdrop-blur-sm">
+          <ul className="flex gap-5">
+            {navLinks.map((data) => (
+              <li key={data.name}>
+                <Link
+                  href={data.href}
+                  className="hover:text-foreground relative px-4 py-2 transition-colors"
+                  onClick={() => {
+                    setActiveSection(data.name)
+                    setTimeOfLastClick(Date.now())
+                  }}
+                >
+                  {data.name}
+                  {data.name === activeSection && (
+                    <motion.span
+                      className="bg-muted absolute inset-0 -z-10 rounded-full"
+                      layoutId="activeSection"
+                      transition={{
+                        type: 'spring',
+                        stiffness: 380,
+                        damping: 30,
+                      }}
+                    ></motion.span>
+                  )}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </motion.header>
   )
 }
