@@ -1,5 +1,12 @@
 import { Icons } from "@/components/icons";
-import { Archivement, Certification, Experience, NavLink, Project, Skill } from "./types";
+import {
+  Archivement,
+  Certification,
+  Experience,
+  NavLink,
+  Project,
+  Skill,
+} from "./types";
 
 export const navLinks: NavLink[] = [
   {
@@ -35,9 +42,10 @@ export const projectsData: Project[] = [
       "By providing instant, dynamic answers, AI agents are now reportedly 20% more accurate than traditional websites in resolving user doubts.",
     technologies: ["Next.js", "TypeScript", "Supabase", "VapiAi", "schdnUi"],
     links: {
-      video:"https://res.cloudinary.com/dp4mpfafe/video/upload/v1758819710/aviora_rjczgh.mp4",
+      video:
+        "https://res.cloudinary.com/dp4mpfafe/video/upload/v1758819710/aviora_rjczgh.mp4",
       preview: "https://aviora-dl1q.vercel.app/",
-      github: "https://github.com/MicrosoftRajan/Aviora",
+      github: "https://aviora-dl1q.vercel.app/",
       githubApi: "#",
     },
   },
@@ -47,9 +55,10 @@ export const projectsData: Project[] = [
       "Our Application help people to connect to their loved ones and also learn new languages and design an algorithm that can suggest the friend who has similar native language and learning language",
     technologies: ["React.js", "JavaScript", "Node.js", "MongoDb", "Postman"],
     links: {
-      video: "https://res.cloudinary.com/dp4mpfafe/video/upload/v1758821398/HaloTalk_z6p9ze.mp4",
-      preview: "#",
-      github: "#",
+      video:
+        "https://res.cloudinary.com/dp4mpfafe/video/upload/v1758821398/HaloTalk_z6p9ze.mp4",
+      preview: "https://github.com/MicrosoftRajan/HaloTalk",
+      github: "https://github.com/MicrosoftRajan/HaloTalk",
       githubApi: "#",
     },
   },
@@ -82,7 +91,7 @@ export const certificationData: Certification[] = [
     ],
   },
 
-    {
+  {
     ctitle: "NPTEL – Cloud Computing",
     ccompany: "NPTEL",
     cdescription:
@@ -96,20 +105,15 @@ export const certificationData: Certification[] = [
     ],
   },
 
-      {
+  {
     ctitle: "C/C++ Data Structure",
     ccompany: "Udemy",
     cdescription:
       "I have learn C and C++ core concept and implement Data Structure from scratch",
     cperiod: "July 2025",
-    ctechnologies: [
-      "C++",
-      "C",
-      "Data Structure and Algorithm",
-    ],
+    ctechnologies: ["C++", "C", "Data Structure and Algorithm"],
   },
 ];
-
 
 export const ArchivementData: Archivement[] = [
   {
@@ -117,23 +121,27 @@ export const ArchivementData: Archivement[] = [
     adescription:
       "Secured the Runner-Up position at the Smart India Hackathon 2024, a national-level 36-hour coding competition. In a high-pressure environment, our team developed a scalable prototype to solve a real-world problem statement. I contributed to the backend logic and API integration, helping deliver a user-friendly and viable solution that earned praise from industry experts and government officials for its innovation and technical accuracy. ",
     aperiod: "2024 Sep",
-    aexp:["Team Management", "Front-end Developer", "Problem Solving","Critical Thinking"]
+    aexp: [
+      "Team Management",
+      "Front-end Developer",
+      "Problem Solving",
+      "Critical Thinking",
+    ],
   },
 
-    {
+  {
     atitle: "Ranked Top 20 on InterviewBit in University",
     adescription:
       "Solved More than 200+ question of Data Structure and Algorithm in InterviewBit",
     aperiod: "Sep 2024 - Present",
-    aexp:["Problem Solving", "Data Structure"]
+    aexp: ["Problem Solving", "Data Structure"],
   },
 
-      {
+  {
     atitle: "Goldstar Badge in C++ on HackerRank",
-    adescription:
-      "solved more than 100+ C++ question on HackerRank Platform",
+    adescription: "solved more than 100+ C++ question on HackerRank Platform",
     aperiod: "Jan 2023 - Present",
-    aexp:["C++", "Complex Problem Solving"]
+    aexp: ["C++", "Complex Problem Solving"],
   },
 ];
 

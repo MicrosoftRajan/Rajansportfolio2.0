@@ -3,11 +3,13 @@ import { z } from 'zod'
 
 export const env = createEnv({
   server: {
-    SITE_URL: z.url(),
-    RESEND_API_KEY: z.string().min(1),
+    RESEND_API_KEY: z.string().min(1), // server-only
+  },
+  client: {
+    SITE_URL: z.string().url(), // client-safe
   },
   runtimeEnv: {
-    SITE_URL: process.env.SITE_URL,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
+    SITE_URL: process.env.NEXT_PUBLIC_SITE_URL, // use client-safe env
   },
 })
