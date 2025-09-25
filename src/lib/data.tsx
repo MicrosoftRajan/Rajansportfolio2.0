@@ -30,24 +30,24 @@ export const navLinks: NavLink[] = [
 
 export const projectsData: Project[] = [
   {
-    video: "assets/videos/aviora.mp4",
     title: "Aviora",
     description:
       "By providing instant, dynamic answers, AI agents are now reportedly 20% more accurate than traditional websites in resolving user doubts.",
     technologies: ["Next.js", "TypeScript", "Supabase", "VapiAi", "schdnUi"],
     links: {
+      video:"https://res.cloudinary.com/dp4mpfafe/video/upload/v1758819710/aviora_rjczgh.mp4",
       preview: "https://aviora-dl1q.vercel.app/",
       github: "https://github.com/MicrosoftRajan/Aviora",
       githubApi: "#",
     },
   },
   {
-    video: "assets/videos/HaloTalk.mp4",
     title: "HaloTalk",
     description:
       "Our Application help people to connect to their loved ones and also learn new languages and design an algorithm that can suggest the friend who has similar native language and learning language",
     technologies: ["React.js", "JavaScript", "Node.js", "MongoDb", "Postman"],
     links: {
+      video: "https://res.cloudinary.com/dp4mpfafe/video/upload/v1758821398/HaloTalk_z6p9ze.mp4",
       preview: "#",
       github: "#",
       githubApi: "#",

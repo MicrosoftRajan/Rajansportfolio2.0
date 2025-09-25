@@ -3,11 +3,11 @@ import { navLinks } from '@/lib/data'
 export type SectionName = (typeof navLinks)[number]['name']
 
 export type Project = {
-  video: string
   title: string
   description: string
   technologies: string[]
   links: {
+    video: string
     preview: string
     github: string
     githubApi: string

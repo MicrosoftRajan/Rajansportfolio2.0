@@ -64,7 +64,7 @@ export default function ProjectsSection() {
               className="overflow-hidden rounded"
             >
               <video
-                src={data.video}
+                src={data.links.video}
                 autoPlay
                 loop
                 muted
