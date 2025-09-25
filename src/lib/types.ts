@@ -22,7 +22,23 @@ export type Experience = {
   technologies: string[]
 }
 
-export type NavName = 'Home' | 'About' | 'Experience' | 'Projects' | 'Contact'
+export type Certification = {
+  ctitle: string
+  ccompany: string
+  cdescription: string
+  cperiod: string
+  ctechnologies: string[]
+}
+
+export type Archivement = {
+  atitle: string
+  adescription: string
+  aperiod: string
+  aexp: string[]
+}
+
+
+export type NavName = 'Home' | 'About' | 'Experience' | 'Projects' | 'Certification'|'Contact'
 
 export type NavLink = {
   name: NavName

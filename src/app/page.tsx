@@ -1,4 +1,6 @@
 import AboutSection from '@/components/about-section'
+import CertificationSection from '@/components/certification-section'
+import AchievementSection from '@/components/archivement-section'
 import ContactSection from '@/components/contact-section'
 import ExperienceSection from '@/components/experience-section'
 import Footer from '@/components/footer'
@@ -19,6 +21,8 @@ export default function Home() {
         <ExperienceSection />
         <SectionDivider />
         <ProjectsSection />
+        <CertificationSection/>
+        <AchievementSection/>
         <ContactSection />
         <Footer />
       </div>

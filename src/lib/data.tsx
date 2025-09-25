@@ -1,111 +1,149 @@
-import { Icons } from '@/components/icons'
-import { Experience, NavLink, Project, Skill } from './types'
+import { Icons } from "@/components/icons";
+import { Archivement, Certification, Experience, NavLink, Project, Skill } from "./types";
 
 export const navLinks: NavLink[] = [
   {
-    name: 'Home',
-    href: '#home',
+    name: "Home",
+    href: "#home",
   },
   {
-    name: 'About',
-    href: '#about',
+    name: "About",
+    href: "#about",
   },
   {
-    name: 'Experience',
-    href: '#experience',
+    name: "Experience",
+    href: "#experience",
   },
   {
-    name: 'Projects',
-    href: '#projects',
+    name: "Projects",
+    href: "#projects",
   },
   {
-    name: 'Contact',
-    href: '#contact',
+    name: "Certification",
+    href: "#certification",
   },
-]
+  {
+    name: "Contact",
+    href: "#contact",
+  },
+];
 
 export const projectsData: Project[] = [
   {
-    video: 'assets/videos/chat-collector-demo.mp4',
-    title: 'Chat Collector Pro',
+    video: "assets/videos/aviora.mp4",
+    title: "Aviora",
     description:
-      'A comprehensive chat collector application built with React and Node.js, featuring real-time collaboration, project tracking, and team management capabilities.',
-    technologies: [
-      'React.js',
-      'Node.js',
-      'MongoDB',
-      'Socket.io',
-      'Material-UI',
-    ],
+      "By providing instant, dynamic answers, AI agents are now reportedly 20% more accurate than traditional websites in resolving user doubts.",
+    technologies: ["Next.js", "TypeScript", "Supabase", "VapiAi", "schdnUi"],
     links: {
-      preview: '#',
-      github: '#',
-      githubApi: '#',
+      preview: "https://aviora-dl1q.vercel.app/",
+      github: "https://github.com/MicrosoftRajan/Aviora",
+      githubApi: "#",
     },
   },
   {
-    video: 'assets/videos/magic-bento-demo.mp4',
-    title: 'Magic Bento Box',
+    video: "assets/videos/HaloTalk.mp4",
+    title: "HaloTalk",
     description:
-      'Magic Bento Box is a platform for creating and sharing magic recipes that can be used in the game.',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'Express.js',
-      'PostgreSQL',
-      'Stripe',
-    ],
+      "Our Application help people to connect to their loved ones and also learn new languages and design an algorithm that can suggest the friend who has similar native language and learning language",
+    technologies: ["React.js", "JavaScript", "Node.js", "MongoDb", "Postman"],
     links: {
-      preview: '#',
-      github: '#',
-      githubApi: '#',
+      preview: "#",
+      github: "#",
+      githubApi: "#",
     },
   },
-] as const
+] as const;
 
 export const experiencesData: Experience[] = [
   {
-    title: 'Software Engineer',
-    company: 'CloudTech Ventures, remote',
+    title: "Java Trainee",
+    company: "Techvanto Academy, remote",
     description:
-      'Currently developing scalable cloud-based applications and microservices. Responsible for architecting solutions, code reviews, and mentoring junior developers in best practices.',
-    period: '2023 Jul - present',
-    technologies: ['React', 'TypeScript', 'AWS', 'GraphQL', 'Kubernetes'],
+      "Currently developing scalable cloud-based applications and microservices. Responsible for architecting solutions, code reviews, and mentoring junior developers in best practices.",
+    period: "2024 June - 2024 Aug",
+    technologies: ["Java", "SpringBoot", "AWS", "Kafka"],
   },
+];
+
+export const certificationData: Certification[] = [
   {
-    title: 'Backend Developer Intern',
-    company: 'DataFlow Systems, remote',
-    description:
-      'Assisted in developing RESTful APIs and database optimization. Gained experience in agile development methodologies and collaborated with senior developers on complex projects.',
-    period: '2023 Jan - 2023 Jul',
-    technologies: ['Java', 'Spring Boot', 'MySQL', 'Redis'],
+    ctitle: "AWS – Solutions Architecture Job Simulation",
+    ccompany: "Forage",
+    cdescription:
+      "This NPTEL certification equipped me with a strong understanding of cloud fundamentals. I learned to apply core principles like virtualization, load balancing, and distributed systems to design scalable and elastic applications. My knowledge covers IaaS, PaaS, and SaaS models, along with cloud security, storage, and deployment strategies for building resilient cloud infrastructure.",
+    cperiod: "Jan 2025 - May 2025",
+    ctechnologies: [
+      "AWS Cloud",
+      "Solution Architecture",
+      "Cloud Infrastructure",
+      "S3",
+      "EC2",
+    ],
   },
+
+    {
+    ctitle: "NPTEL – Cloud Computing",
+    ccompany: "NPTEL",
+    cdescription:
+      "Currently developing scalable cloud-based applications and microservices. Responsible for architecting solutions, code reviews, and mentoring junior developers in best practices.",
+    cperiod: "July 2025",
+    ctechnologies: [
+      "Cloud Models (IaaS, PaaS, SaaS)",
+      "Distributed System",
+      "Load Balancing",
+      "Deployment Model",
+    ],
+  },
+
+      {
+    ctitle: "C/C++ Data Structure",
+    ccompany: "Udemy",
+    cdescription:
+      "I have learn C and C++ core concept and implement Data Structure from scratch",
+    cperiod: "July 2025",
+    ctechnologies: [
+      "C++",
+      "C",
+      "Data Structure and Algorithm",
+    ],
+  },
+];
+
+
+export const ArchivementData: Archivement[] = [
   {
-    title: 'Full Stack Developer',
-    company: 'Digital Innovations, remote',
-    description:
-      'Built responsive web applications from concept to deployment. Worked with clients to understand requirements and delivered custom solutions that exceeded expectations.',
-    period: '2022 Jul - 2022 Dec',
-    technologies: ['Vue.js', 'Python', 'PostgreSQL', 'Docker'],
+    atitle: "Smart India Hackathon - Runner-Up",
+    adescription:
+      "Secured the Runner-Up position at the Smart India Hackathon 2024, a national-level 36-hour coding competition. In a high-pressure environment, our team developed a scalable prototype to solve a real-world problem statement. I contributed to the backend logic and API integration, helping deliver a user-friendly and viable solution that earned praise from industry experts and government officials for its innovation and technical accuracy. ",
+    aperiod: "2024 Sep",
+    aexp:["Team Management", "Front-end Developer", "Problem Solving","Critical Thinking"]
   },
-  {
-    title: 'Junior Software Engineer',
-    company: 'TechCorp Solutions, San Francisco CA',
-    description:
-      'Developed and maintained web applications using modern JavaScript frameworks. Collaborated with cross-functional teams to deliver high-quality software solutions.',
-    period: '2022 Jan - 2022 Jul',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+
+    {
+    atitle: "Ranked Top 20 on InterviewBit in University",
+    adescription:
+      "Solved More than 200+ question of Data Structure and Algorithm in InterviewBit",
+    aperiod: "Sep 2024 - Present",
+    aexp:["Problem Solving", "Data Structure"]
   },
-]
+
+      {
+    atitle: "Goldstar Badge in C++ on HackerRank",
+    adescription:
+      "solved more than 100+ C++ question on HackerRank Platform",
+    aperiod: "Jan 2023 - Present",
+    aexp:["C++", "Complex Problem Solving"]
+  },
+];
 
 export const skillsData: Skill[] = [
-  { name: 'Sass', icon: <Icons.sass className="size-12" /> },
-  { name: 'Tailwind', icon: <Icons.tailwind className="size-12" /> },
-  { name: 'JavaScript', icon: <Icons.javascript className="size-12" /> },
-  { name: 'TypeScript', icon: <Icons.typescript className="size-12" /> },
-  { name: 'React', icon: <Icons.react className="size-12" /> },
-  { name: 'NextJS', icon: <Icons.nextjs className="size-12" /> },
-  { name: 'NestJS', icon: <Icons.nestjs className="size-12" /> },
-  { name: 'Prisma', icon: <Icons.prisma className="size-12" /> },
-  { name: 'Docker', icon: <Icons.docker className="size-12" /> },
-]
+  { name: "Sass", icon: <Icons.sass className="size-12" /> },
+  { name: "Tailwind", icon: <Icons.tailwind className="size-12" /> },
+  { name: "JavaScript", icon: <Icons.javascript className="size-12" /> },
+  { name: "TypeScript", icon: <Icons.typescript className="size-12" /> },
+  { name: "React", icon: <Icons.react className="size-12" /> },
+  { name: "NextJS", icon: <Icons.nextjs className="size-12" /> },
+  { name: "Prisma", icon: <Icons.prisma className="size-12" /> },
+  { name: "Docker", icon: <Icons.docker className="size-12" /> },
+];
